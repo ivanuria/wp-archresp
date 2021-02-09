@@ -1,0 +1,62 @@
+/*
+Theme Name: ArchResp
+Text Domain: wp-archresp
+Version: 1.0
+Description: Responsive Theme
+Tags: responsive, layout, customizable
+Author: Iván Uría
+Author URI: https://ivanuria.es
+*/
+
+
+/****************************/
+/* HEADER                   */
+/****************************/
+
+:root {
+  font-size: 18px;
+}
+
+header {
+  width: 100%;
+  padding: 2ex;
+}
+header ul {
+  text-align: right;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 1ex;
+}
+header ul li a {
+  text-decoration: none;
+}
+header img.logo {
+  max-height: calc(2.5em + 2ex);
+}
+header div#primary-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/****************************/
+/* MAIN                     */
+/****************************/
+
+main {
+  padding: 2ex;
+}
+
+/****************************/
+/* FOOTER                   */
+/****************************/
+
+
+/******************************/
+/* BOOTSTRAP Overrides        */
+/******************************/
+
+dl, ol, ul {
+  margin-bottom: 0px;
+}

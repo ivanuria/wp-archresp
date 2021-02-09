@@ -1,0 +1,88 @@
+{
+  "body-style": {
+    "body_bg_color": {
+      "control": "color",
+      "label": "Color de Fondo del Cuerpo",
+      "default": "#FFFFFF",
+      "selector": "body",
+      "property": "background-color"
+    }
+  },
+  "footer-style": {
+    "footer_bg_color": {
+      "control": "color",
+      "label": "Color de Fondo del Footer",
+      "default": "#ACACAC",
+      "selector": "footer",
+      "property": "background-color"
+    },
+    "footer_text_color": {
+      "control": "color",
+      "label": "Color de Fondo del Footer",
+      "default": "#FFFFFF",
+      "selector": "footer",
+      "property": "color"
+    },
+    "footer_copyright": {
+      "control": "text",
+      "label": "Texto del Copyright",
+      "default": ""
+    }
+  },
+  "header-style": {
+    "head_bg_color": {
+      "control": "color",
+      "label": "Color de Cabecera",
+      "default": "#ACACAC",
+      "selector": "header",
+      "property": "background-color"
+    },
+    "head_text_color": {
+      "control": "color",
+      "label": "Color del Texto de Cabecera",
+      "default": "#FFFFFF",
+      "selector": "header",
+      "property": "color"
+    },
+    "head_link_color": {
+      "control": "color",
+      "label": "Color de Enlaces en Cabecera",
+      "default": "#0d6efd",
+      "selector": "header a",
+      "property": "color"
+    },
+    "head_link_hover_color": {
+      "control": "color",
+      "label": "Color de Enlaces en Cabecera",
+      "default": "#0a58ca",
+      "selector": "header a:hover",
+      "property": "color"
+    },
+    "head_menu": {
+      "control": "checkbox",
+      "label": "Menú en cabecera",
+      "default": "true"
+    },
+    "head_menu_valign": {
+      "control": "select",
+      "label": "Alineamiento Vertical del Menú",
+      "default": "center",
+      "selector": "header div#primary-menu",
+      "property": "align-items"
+    },
+    "head_menu_halign": {
+      "control": "select",
+      "label": "Alineamiento Horizontal del Menú",
+      "default": "flex-end",
+      "selector": "header div#primary-menu",
+      "property": "justify-content"
+    }
+  },
+  "title_tagline": {
+    "title_logo": {
+      "label": "Logo",
+      "control": "image",
+      "default": ""
+    }
+  }
+}

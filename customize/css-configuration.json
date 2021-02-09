@@ -1,0 +1,18 @@
+{
+  "align-items": {
+    "flex-start": "Comienzo",
+    "flex-end": "Fin",
+    "center": "Centro",
+    "stretch": "Estirar",
+    "baseline": "Base"
+  },
+  "justify-content": {
+    "flex-start": "Comienzo",
+    "flex-end": "Fin",
+    "center": "Centro",
+    "space-between": "Espacio Interno",
+    "space-around": "Espacio Alrededor",
+    "stretch": "Estirar",
+    "space-evenly": "Espacio Por Igual"
+  }
+}
