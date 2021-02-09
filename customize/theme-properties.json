@@ -6,6 +6,20 @@
       "default": "#FFFFFF",
       "selector": "body",
       "property": "background-color"
+    },
+    "body_p_margin_bottom": {
+      "control": "text",
+      "label": "Margen inferior de párrafo",
+      "default": "2em",
+      "selector": "main p",
+      "property": "margin-bottom"
+    },
+    "body_h1_margin_bottom": {
+      "control": "text",
+      "label": "Margen inferior de H1",
+      "default": "1em",
+      "selector": "main h1",
+      "property": "margin-bottom"
     }
   },
   "footer-style": {
@@ -76,6 +90,18 @@
       "default": "flex-end",
       "selector": "header div#primary-menu",
       "property": "justify-content"
+    }
+  },
+  "hero": {
+    "hero_active": {
+      "control": "checkbox",
+      "label": "Activación del Hero",
+      "default": "true"
+    },
+    "hero_image": {
+      "label": "Hero",
+      "control": "media",
+      "default": ""
     }
   },
   "title_tagline": {

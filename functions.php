@@ -78,6 +78,16 @@ function archresp_customize_register( $wp_customize ) {
   $obj_controls = array(
     'color' => 'WP_Customize_Color_Control',
     'image' => 'WP_Customize_Image_Control',
+    'media' => 'WP_Customize_Media_Control',
+  );
+  $default_sections = array(
+    'title_tagline',
+    'colors',
+    'header_image',
+    'background_image',
+    'menus',
+    'widgets',
+    'static_front_page'
   );
 
   foreach ($properties as $section=>$props){
@@ -107,6 +117,11 @@ function archresp_customize_register( $wp_customize ) {
       } else {
         $property = '';
       }
+      if (!array_key_exists($section, $default_sections)) {
+        $section_name = 'archresp_'.$section;
+      } else {
+        $section_name = $section;
+      }
 
 
       $wp_customize->add_setting(
@@ -125,7 +140,7 @@ function archresp_customize_register( $wp_customize ) {
              'archresp_'.$name,
              array(
               	'label' => __($label, 'wp-archresp'),
-              	'section' => 'archresp_'.$section,
+              	'section' => $section_name,
               	'settings' => 'archresp_'.$name,
             )
           )
@@ -143,7 +158,7 @@ function archresp_customize_register( $wp_customize ) {
           array(
             'type' => $control,
           	'label' => __($label, 'wp-archresp'),
-          	'section' => 'archresp_'.$section,
+          	'section' => $section_name,
           	'settings' => 'archresp_'.$name,
             'choices' => $choices
           )
@@ -154,7 +169,7 @@ function archresp_customize_register( $wp_customize ) {
           array(
             'type' => $control,
           	'label' => __($label, 'wp-archresp'),
-          	'section' => 'archresp_'.$section,
+          	'section' => $section_name,
           	'settings' => 'archresp_'.$name,
           )
         );
