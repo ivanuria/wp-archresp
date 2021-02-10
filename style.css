@@ -41,6 +41,20 @@ header div#primary-menu {
 }
 
 /****************************/
+/* TITLE H1 - HERO          */
+/****************************/
+div.hero_container {
+  position: relative;
+}
+div.hero_container div.hero_image,
+div.hero_container div.hero_over,
+div.hero_container div.hero_title {
+  position: absolute;
+  height: 100%,
+  top: 0;
+}
+
+/****************************/
 /* ARTICLE                  */
 /****************************/
 
@@ -65,3 +79,9 @@ dl, ol, ul {
 /******************************/
 /* MOBILE                     */
 /******************************/
+
+@media screen and (max_width: 768px) {
+  div.hero_container {
+    display: none;
+  }
+}

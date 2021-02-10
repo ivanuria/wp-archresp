@@ -93,16 +93,59 @@
     }
   },
   "hero": {
-    "hero_active": {
+    "hero_page_active": {
       "control": "checkbox",
-      "label": "Activación del Hero",
+      "label": "Activación del Hero en Páginas",
       "default": "true"
     },
-    "hero_image": {
-      "label": "Hero",
-      "control": "media",
-      "default": ""
+    "hero_page_height": {
+      "control": "number",
+      "label": "Alto en Píxeles del Hero en Páginas",
+      "default": 550,
+      "selector": "body.page div.hero_container",
+      "property": "height"
     }
+    "hero_page_valign": {
+      "control": "select",
+      "label": "Alineamiento Vertical del Título en el HERO en Páginas",
+      "default": "center",
+      "selector": "body.page div.title_container.container",
+      "property": "align-items"
+    },
+    "hero_page_halign": {
+      "control": "select",
+      "label": "Alineamiento Horizontal del Título en el HERO en Páginas",
+      "default": "center",
+      "selector": "body.page div.title_container.container",
+      "property": "justify-content"
+    }
+    "hero_blog_active": {
+      "control": "checkbox",
+      "label": "Activación del Hero en Blog",
+      "default": "true"
+    }
+    "hero_blog_height": {
+      "control": "number",
+      "label": "Alto en Píxeles del Hero en Páginas",
+      "default": 550,
+      "selector": "body.single div.hero_container",
+      "property": "height"
+    }
+    "hero_blog_valign": {
+      "control": "select",
+      "label": "Alineamiento Vertical del Título en el HERO en Posts",
+      "default": "center",
+      "selector": "single.page div.hero_title.container",
+      "property": "align-items"
+    },
+    "hero_blog_halign": {
+      "control": "select",
+      "label": "Alineamiento Horizontal del Título en el HERO en Posts",
+      "default": "center",
+      "selector": "single.page div.hero_title.container",
+      "property": "justify-content"
+    }
+
   },
   "title_tagline": {
     "title_logo": {
